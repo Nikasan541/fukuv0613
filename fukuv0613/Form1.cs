@@ -13,7 +13,6 @@ namespace fukuv0613
         {
             label1.Left += vx; 
             label1.Top += vy;
-            // 変数mposを宣言して、マウスのモニター座標を取り出す
 
             var mpos = MousePosition;
 
@@ -21,19 +20,19 @@ namespace fukuv0613
 
             if (label1.Left < 0)
             {
-                vx = Math.Abs(vx);
+                vx = Math.Abs(vx+100);
             }
             else if(label1.Left  >ClientSize.Width)
             {
-                vx = -Math.Abs(vx);
+                vx = -Math.Abs(vx+100) ;
             }
             if (label1.Top < 0)
             {
-                vy = Math.Abs(vy);
+                vy = Math.Abs(vy+100);
             }
             else if (label1.Top > ClientSize.Height)
             {
-                vy = -Math.Abs(vy);
+                vy = -Math.Abs(vy+100);
             }
             if (label1.Left < fpos.X && label1.Right > fpos.X && label1.Top < fpos.Y && label1.Bottom > fpos.Y)
             {

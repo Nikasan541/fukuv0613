@@ -20,6 +20,11 @@ namespace fukuv0613
 
             if (label1.Left < 0)
             {
+                if (vx ==100)
+                {
+                    vx = 100;
+                }
+
                 vx = Math.Abs(vx += 10);
             }
             else if (label1.Left > ClientSize.Width)
@@ -28,7 +33,7 @@ namespace fukuv0613
             }
             if (label1.Top < 0)
             {
-                vy = Math.Abs(vy + 10);
+                vy = Math.Abs(vy += 10);
             }
             else if (label1.Top > ClientSize.Height)
             {

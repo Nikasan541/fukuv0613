@@ -31,7 +31,7 @@ namespace fukuv0613
             {
                 vy = Math.Abs(vy);
             }
-            else if (label1.Top > ClientSize.Width)
+            else if (label1.Top > ClientSize.Height)
             {
                 vy = -Math.Abs(vy);
             }
